@@ -22,6 +22,59 @@ and using REST service in Angular 2 app folder (static/ name of angular app).
 ##For production:
 Currently All the libs are on cdn, not on local. For production please change cdn url to local url, and compile all ts to js in same folder.
 
+## Structure tree:
+```
+
+├── pom.xml
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── example--------------------------Add your RESTful service here.
+│   │   │           ├── HomeController.java---------Controller, You can add RESTful service.
+│   │   │           ├── ServletInitializer.java
+│   │   │           └── SpringbootAngular2ViewApplication.java
+│   │   └── resources
+│   │       ├── application.properties
+│   │       ├── rebel.xml
+│   │       ├── static
+│   │       │   ├── css
+│   │       │   │   └── core.css
+│   │       │   ├── heroes1--------------------------Angular 2 view folder
+│   │       │   │   ├── app--------------------------Angular 2 app folder
+│   │       │   │   │   ├── app.component.ts
+│   │       │   │   │   ├── app.module.ts
+│   │       │   │   │   └── main.ts
+│   │       │   │   ├── css
+│   │       │   │   │   └── styles.css
+│   │       │   │   ├── styles.css
+│   │       │   │   ├── systemjs.config.js-----------systemjs config that map the path of angular 2 app
+│   │       │   │   └── tsconfig.json
+│   │       │   ├── heroes2--------------------------Angular 2 view folder
+│   │       │   │   ├── app--------------------------Angular 2 app folder
+│   │       │   │   │   ├── app.component.ts
+│   │       │   │   │   ├── app.module.ts
+│   │       │   │   │   └── main.ts
+│   │       │   │   ├── css
+│   │       │   │   │   └── styles.css
+│   │       │   │   ├── styles.css
+│   │       │   │   ├── systemjs.config.js-----------systemjs config that map the path of angular 2 app
+│   │       │   │   └── tsconfig.json
+│   │       │   └── tsconfig.json--------------------tsconfig file currently use
+│   │       └── templates
+│   │           ├── fragments
+│   │           │   ├── alert.html
+│   │           │   ├── footer.html
+│   │           │   └── header.html
+│   │           ├── heroes1.html--------------------- the view call Angular 2 component
+│   │           ├── heroes2.html--------------------- the view call Angular 2 component
+│   │           ├── index.html-----------------------this is the original view form official spring boot starter
+│   │           └── test
+│   │               └── test.html
+│   └
+
+```
+
 ##next steps:
 1,Angular 2 cli will be use in this project in next step.
 2,I will make a automatically compile ts to js when I finish my currently  commercial project.
