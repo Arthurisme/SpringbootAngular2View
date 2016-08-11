@@ -20,7 +20,10 @@ class HomeController {
 
     @RequestMapping("/heroes1")
     String heroes1(Model model) {
-         return "heroes1";
+        model.addAttribute("testmessage", "sdfasfdasdfasdf12");
+
+        return "heroes1"
+                ;
     }
 
     @RequestMapping("/heroes2")
