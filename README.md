@@ -18,6 +18,17 @@ The router function are not supported, because here angular 2 component is using
 Download and import with IntelliJ IDEA or Eclipse, and make view under templates folder. And make REST service as controller.
 and using REST service in Angular 2 app folder (static/ name of angular app).
 
+###Add a new angular 2 view:
+1,copy or rename heroes1 folder  as your desired name. Keep the new folder in the same place.
+2,copy or rename heroes1.html file as your desired name. Keep the new file in the same place.
+3, change system.config.js path in your new created html file.
+4,In system.config.js file, change map to new app path.
+e.g.:
+    'app':                        ‘heroes1/app',
+to
+    'app':                        'youranother/app',
+
+
 
 ##For production:
 Currently All the libs are on cdn, not on local. For production please change cdn url to local url, and compile all ts to js in same folder.
