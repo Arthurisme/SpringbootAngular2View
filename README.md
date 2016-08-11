@@ -30,7 +30,7 @@ to
     
     
 ###Custom Angular 2 tag with thymeleaf:  
-
+```
 <div th:inline="text" >
   <my-app (click)="clickOnHtml()">Loading...</my-app>
 </div>
@@ -40,13 +40,13 @@ or:
 <div th:inline="text" >
   <my-app [testmessage]="this is a message">Loading...</my-app>
 </div>
-
+```
 
 ###Custom Angular 2 tag with jsp file (You need to enable jsp configration)    
-
+```
 <%  String angular2tag = "<my-app [testmessage]="this is a message"> welcome to jsp </my-app>";%>
 <% out.print(angular2tag); %>
-
+```
 ####Or you can use JSTL to do same thing.      
 
 
